@@ -1,0 +1,26 @@
+my:
+ custom:
+   property: hello from yaml properties!
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+my:
+  custom:
+    property: hello from yaml properties!
+    random: No longer Random!
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: create
+my:
+  custom:
+    property: hello from yaml properties!
+    random: Now from profile create!!
+    shouldCreate: true
+
